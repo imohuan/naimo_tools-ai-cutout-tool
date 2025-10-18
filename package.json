@@ -1,0 +1,39 @@
+{
+  "name": "ai-cutout-tool",
+  "version": "1.0.0",
+  "description": "AI 智能抠图工具",
+  "type": "module",
+  "scripts": {
+    "init": "pnpm i && pnpm run add-electron-types && pnpm run dev",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "add-electron-types": "$env:ELECTRON_SKIP_DOWNLOAD=1; pnpm install electron --save-dev",
+    "deploy": "node scripts/deploy-to-build.js"
+  },
+  "keywords": [
+    "naimo",
+    "plugin",
+    "ai",
+    "cutout",
+    "image"
+  ],
+  "author": "Naimo Tools Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/node": "^22.0.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "onnxruntime-web": "1.21.0-dev.20250206-d981b153d3",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5",
+    "vue": "^3.4.0",
+    "vue-tsc": "^2.0.0"
+  },
+  "dependencies": {
+    "@imgly/background-removal": "^1.7.0",
+    "@mediapipe/tasks-vision": "^0.10.14",
+    "browser-image-compression": "^2.0.2"
+  }
+}
