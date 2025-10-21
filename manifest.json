@@ -1,0 +1,21 @@
+{
+  "$schema": "./schema.json",
+  "id": "ai-cutout-tool",
+  "name": "AI 抠图工具",
+  "version": "1.0.1",
+  "author": "Naimo Tools Team",
+  "icon": "./ico.png",
+  "description": "基于 MediaPipe 的 AI 智能抠图工具，支持 AI 自动抠图和颜色抠图两种模式",
+  "category": "image_video",
+  "enabled": true,
+  "main": "./index.html",
+  "preload": "./preload.js",
+  "feature": [
+    {
+      "path": "cutout",
+      "name": "AI 抠图",
+      "icon": "./ico.png",
+      "description": "智能图片背景去除工具"
+    }
+  ]
+}
