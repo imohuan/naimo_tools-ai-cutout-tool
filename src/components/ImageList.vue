@@ -171,7 +171,7 @@ const emit = defineEmits<Emits>();
 const uploadArea = ref<HTMLDivElement>();
 const fileInput = ref<HTMLInputElement>();
 const isDragOver = ref(false);
-const isCollapsed = ref(false);
+const isCollapsed = ref(true);
 
 const toggleCollapse = () => {
   isCollapsed.value = !isCollapsed.value;

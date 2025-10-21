@@ -319,7 +319,7 @@ const pluginPanelRef = ref<InstanceType<typeof PluginPanel>>();
 const transform = ref({ scale: 1, x: 0, y: 0 });
 
 // 右侧面板折叠状态
-const isRightPanelCollapsed = ref(false);
+const isRightPanelCollapsed = ref(true);
 
 const toggleRightPanel = () => {
   isRightPanelCollapsed.value = !isRightPanelCollapsed.value;
